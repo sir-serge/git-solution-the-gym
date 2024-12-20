@@ -67,5 +67,5 @@ M       readme.md
 Switched to branch 'dev'
 gymkubaho@Kubahos-iMac-2 git exercises % git branch -d test
 Deleted branch test (was b0bbccd).
-gymkubaho@Kubahos-iMac-2 git exercises % 
+gymkubaho@Kubahos-iMac-2 git exercises %  
 ```
