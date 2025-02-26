@@ -72,7 +72,7 @@ gymkubaho@Kubahos-iMac-2 git exercises %
 
 bundle 1 
 exercises 2
-```sql
+```git
 Serge@DESKTOP-N7T6QJS MINGW64 ~/Desktop/git-trello (main)
 $ git push --set-upstream origin dev
 error: src refspec dev does not match any
@@ -495,4 +495,87 @@ HEAD is now at bc921b3 create and setup the home,about and team page
 
 Serge@DESKTOP-N7T6QJS MINGW64 ~/Desktop/git-trello (dev)
 $
+```
+```git 
+gymiriba@Iribas-iMac git-solution-the-gym % git checkout -b ft/bundle-2
+
+Switched to a new branch 'ft/bundle-2'
+gymiriba@Iribas-iMac git-solution-the-gym % git add services.html 
+gymiriba@Iribas-iMac git-solution-the-gym % git commit -m "Add services page"
+
+[ft/bundle-2 099bfb5] Add services page
+ Committer: Gym Iriba <gymiriba@Iribas-iMac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 services.html
+gymiriba@Iribas-iMac git-solution-the-gym % git push -u origin ft/bundle-2
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/sir-serge/git-solution-the-gym/pull/new/ft/bundle-2
+remote: 
+To https://github.com/sir-serge/git-solution-the-gym.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+gymiriba@Iribas-iMac git-solution-the-gym % git checkout main
+
+error: Your local changes to the following files would be overwritten by checkout:
+        readme.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+gymiriba@Iribas-iMac git-solution-the-gym % git stash save "Changes to readme.md"
+
+Saved working directory and index state On ft/bundle-2: Changes to readme.md
+gymiriba@Iribas-iMac git-solution-the-gym % git checkout main
+
+branch 'main' set up to track 'origin/main'.
+Switched to a new branch 'main'
+gymiriba@Iribas-iMac git-solution-the-gym % git merge ft/bundle-2
+fatal: refusing to merge unrelated histories
+gymiriba@Iribas-iMac git-solution-the-gym % git merge --allow-unrelated-histories ft/bundle-2
+hint: Waiting for your editor to close the file... 
+ *  History restored 
+
+gymiriba@Iribas-iMac git-solution-the-gym % git checkout dev                                 
+A       services.html
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+gymiriba@Iribas-iMac git-solution-the-gym % git merge ft/bundle-2                            
+Updating c87bea5..099bfb5
+Fast-forward
+ services.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 services.html
+gymiriba@Iribas-iMac git-solution-the-gym % git push origin main
+
+Everything up-to-date
+gymiriba@Iribas-iMac git-solution-the-gym % git status
+On branch dev
+Your branch is ahead of 'origin/dev' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gymiriba@Iribas-iMac git-solution-the-gym % git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sir-serge/git-solution-the-gym.git 
+   c87bea5..099bfb5  dev -> dev
+gymiriba@Iribas-iMac git-solution-the-gym % 
 ```
