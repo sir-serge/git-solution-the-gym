@@ -1,7 +1,7 @@
 #   git exercises 
   bundle 1
 exericses1 
-```
+```sql
 gymkubaho@Kubahos-iMac-2 git exercises % git init
 Initialized empty Git repository in /Users/gymkubaho/Desktop/git exercises/.git/
 gymkubaho@Kubahos-iMac-2 git exercises % git status
