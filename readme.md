@@ -72,7 +72,7 @@ gymkubaho@Kubahos-iMac-2 git exercises %
 
 bundle 1 
 exercises 2
-```
+```sql
 Serge@DESKTOP-N7T6QJS MINGW64 ~/Desktop/git-trello (main)
 $ git push --set-upstream origin dev
 error: src refspec dev does not match any
