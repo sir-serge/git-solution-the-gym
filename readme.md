@@ -645,3 +645,53 @@ To https://github.com/sir-serge/git-exercises-bundle4.git
  * [new branch]      main -> main
 PS C:\Users\Serge\Desktop\git-solution-the-gym>
 ```
+###bundle 4 exercise 2
+```bash
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git checkout -b ft/squashing
+
+Switched to a new branch 'ft/squashing'
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git merge -- squash ft/footer
+merge: squash - not something we can merge
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git merge --squash ft/footer
+ 
+Updating aac2fd9..803b5e5
+Fast-forward
+Squash commit -- not updating HEAD
+ home.html | 3 +++
+ 1 file changed, 3 insertions(+)
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git commit -m"footer changes squash"
+[ft/squashing 2089907] footer changes squash
+ 1 file changed, 3 insertions(+)
+Date:   Tue Mar 4 23:22:32 2025 +0200
+
+    footer changes squash
+
+commit aac2fd9034e25e17d63175ac178528fb3890ec38 (origin/main, git-copy/main, main)
+Author: sir-serge <irkzsrg@gmail.com>
+Date:   Tue Mar 4 22:09:47 2025 +0200
+
+    create git-copy
+
+commit 87ba4dfb14a0562aa513a12118ffa0a384a1f0ca
+Author: sir-serge <irkzsrg@gmail.com>
+Date:   Thu Jan 9 19:16:26 2025 +0200
+
+    create home.html
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git push origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/sir-serge/git-solution-the-gym/pull/new/ft/squashing
+remote:
+To https://github.com/sir-serge/git-solution-the-gym.git
+ * [new branch]      ft/squashing -> ft/squashing
+```
