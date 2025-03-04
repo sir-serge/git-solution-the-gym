@@ -1,7 +1,7 @@
 #   git exercises 
   bundle 1
 exericses1 
-```sql
+```bash
 gymkubaho@Kubahos-iMac-2 git exercises % git init
 Initialized empty Git repository in /Users/gymkubaho/Desktop/git exercises/.git/
 gymkubaho@Kubahos-iMac-2 git exercises % git status
@@ -72,7 +72,7 @@ gymkubaho@Kubahos-iMac-2 git exercises %
 
 bundle 1 
 exercises 2
-```git
+```bash
 Serge@DESKTOP-N7T6QJS MINGW64 ~/Desktop/git-trello (main)
 $ git push --set-upstream origin dev
 error: src refspec dev does not match any
@@ -496,7 +496,7 @@ HEAD is now at bc921b3 create and setup the home,about and team page
 Serge@DESKTOP-N7T6QJS MINGW64 ~/Desktop/git-trello (dev)
 $
 ```
-```git 
+```bash 
 gymiriba@Iribas-iMac git-solution-the-gym % git checkout -b ft/bundle-2
 
 Switched to a new branch 'ft/bundle-2'
@@ -578,4 +578,70 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/sir-serge/git-solution-the-gym.git 
    c87bea5..099bfb5  dev -> dev
 gymiriba@Iribas-iMac git-solution-the-gym % 
+```
+
+
+###bundle 4 exercise 1
+```bash
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git status 
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git chckout main
+git: 'chckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git checkout main
+branch 'main' set up to track 'origin/main'.
+Switched to a new branch 'main'
+PS C:\Users\git remote add git-copy https://github.com/sir-serge/git-exercises-bundle4.git
+PS C:\Users\Serge\Desktop\git-solution-the-gym>
+
+
+                                                    
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git add .\home.html
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   home.html
+
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git add .
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   home.html
+
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git commit -m"create git-copy"
+[main aac2fd9] create git-copy
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git push origin
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.        
+To https://github.com/sir-serge/git-solution-the-gym.git
+   87ba4df..aac2fd9  main -> main
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git push git-copy
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 642 bytes | 642.00 KiB/s, done.
+Total 6 (delta 1), reused 2 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/sir-serge/git-exercises-bundle4.git
+ * [new branch]      main -> main
+PS C:\Users\Serge\Desktop\git-solution-the-gym>
 ```
