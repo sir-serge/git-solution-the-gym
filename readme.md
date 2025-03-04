@@ -1,7 +1,7 @@
 #   git exercises 
   bundle 1
 exericses1 
-```sql
+```bash
 gymkubaho@Kubahos-iMac-2 git exercises % git init
 Initialized empty Git repository in /Users/gymkubaho/Desktop/git exercises/.git/
 gymkubaho@Kubahos-iMac-2 git exercises % git status
@@ -72,7 +72,7 @@ gymkubaho@Kubahos-iMac-2 git exercises %
 
 bundle 1 
 exercises 2
-```git
+```bash
 Serge@DESKTOP-N7T6QJS MINGW64 ~/Desktop/git-trello (main)
 $ git push --set-upstream origin dev
 error: src refspec dev does not match any
@@ -496,7 +496,7 @@ HEAD is now at bc921b3 create and setup the home,about and team page
 Serge@DESKTOP-N7T6QJS MINGW64 ~/Desktop/git-trello (dev)
 $
 ```
-```git 
+```bash 
 gymiriba@Iribas-iMac git-solution-the-gym % git checkout -b ft/bundle-2
 
 Switched to a new branch 'ft/bundle-2'
@@ -578,4 +578,69 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/sir-serge/git-solution-the-gym.git 
    c87bea5..099bfb5  dev -> dev
 gymiriba@Iribas-iMac git-solution-the-gym % 
+```
+
+
+
+BUNDEL 2 # EXERCISES 2
+```bash
+ymiriba@Iribas-iMac git-solution-the-gym % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+gymiriba@Iribas-iMac git-solution-the-gym % git checkout  ft/service-redesign
+Switched to branch 'ft/service-redesign'
+gymiriba@Iribas-iMac git-solution-the-gym % git add services
+fatal: pathspec 'services' did not match any files
+gymiriba@Iribas-iMac git-solution-the-gym % git add services.html 
+gymiriba@Iribas-iMac git-solution-the-gym % git status
+On branch ft/service-redesign
+nothing to commit, working tree clean
+gymiriba@Iribas-iMac git-solution-the-gym % git commit -m "Added new changes to service.html for service redesign"
+
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymiriba@Iribas-iMac git-solution-the-gym % git commit -am "Added new changes to service.html for service redesign"
+
+[ft/service-redesign c6f66b5] Added new changes to service.html for service redesign
+ Committer: Gym Iriba <gymiriba@Iribas-iMac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+gymiriba@Iribas-iMac git-solution-the-gym % git push ft/service-redesign                                           
+fatal: 'ft/service-redesign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+gymiriba@Iribas-iMac git-solution-the-gym % git push origin ft/service-redesign
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 325 bytes | 325.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/sir-serge/git-solution-the-gym/pull/new/ft/service-redesign
+remote: 
+To https://github.com/sir-serge/git-solution-the-gym.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+gymiriba@Iribas-iMac git-solution-the-gym %
 ```
