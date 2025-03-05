@@ -695,3 +695,65 @@ remote:
 To https://github.com/sir-serge/git-solution-the-gym.git
  * [new branch]      ft/squashing -> ft/squashing
 ```
+###bundle 5 exercise 1
+```bash
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git checkout dev 
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git pull
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), 3.63 KiB | 47.00 KiB/s, done.
+From https://github.com/sir-serge/git-solution-the-gym
+   df7d7e8..94b45e7  dev        -> origin/dev
+   aac2fd9..38164a2  main       -> origin/main
+Updating df7d7e8..94b45e7
+Fast-forward
+ readme.md | 124 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 120 insertions(+), 4 deletions(-)
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git add .\index.html
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git status 
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    home.html
+
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git add home.html
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git status       
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    home.html -> index.html
+
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git commit -m"rename home.html to index.html"
+[dev b698977] rename home.html to index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename home.html => index.html (100%)
+PS C:\Users\Serge\Desktop\git-solution-the-gym> git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 240 bytes | 240.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sir-serge/git-solution-the-gym.git
+   94b45e7..b698977  dev -> dev
+```
+``` link
+https://sir-serge.github.io/git-solution-the-gym/
+```
